@@ -97,3 +97,30 @@
     }
 
   }
+  @media only screen and (max-width: 370px) {
+ .contactsection {
+      gap: 20px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      display: grid;
+    }
+    .contactlabel{
+      align-self: center;
+    }
+   
+  
+    .contactformcontainer {
+      width: 100%;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+    }
+  
+    .divider {
+      margin: 20px;
+    }
+
+  }
