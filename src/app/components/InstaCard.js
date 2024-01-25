@@ -10,7 +10,7 @@ const InstaCard = (curElem) => {
     <>
     <div className={styles.card} >
                 <div className={styles.card_image}>
-                <Image src={curElem.node.display_url} alt={id} width={240} height={240} />
+                <Image src={curElem.media_url} alt={id} width={240} height={240} />
                 </div>
                 {/* <div className={styles.card_data}>
                     <h2>{title.substring(0,18)}</h2>

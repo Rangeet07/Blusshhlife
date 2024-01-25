@@ -53,29 +53,29 @@ const Movie = async () => {
 
 
 
-// const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_KEY}`;
-// // const a = 'https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=IGQWROQlg3OG9TU04wMEhicGFleko4R0hEN0JxTDFuamFsamVoZAUc5YnJOd3k4NGFjcDJjZA24tQjRKWlBtdGR6RURGTWxuRWdLbkJnd01qYi1kbWtsdHJDVXN0XzRpbThNSm5DN2NYNlFKU1kxMTRWWmZA0aXJadVEZD'
-// const response = await fetch(url,{
-//     cache: "force-cache"
-// });
-//     const feed = await response.json();
-// const main_data = feed.data;
-// console.log(main_data);
+const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_KEY}`;
+// const a = 'https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=IGQWROQlg3OG9TU04wMEhicGFleko4R0hEN0JxTDFuamFsamVoZAUc5YnJOd3k4NGFjcDJjZA24tQjRKWlBtdGR6RURGTWxuRWdLbkJnd01qYi1kbWtsdHJDVXN0XzRpbThNSm5DN2NYNlFKU1kxMTRWWmZA0aXJadVEZD'
+const response = await fetch(url,{
+    cache: "force-cache"
+});
+    const feed = await response.json();
+const main_data = feed.data;
+console.log(main_data);
 
 
 
-const url = process.env.RAPID_KEY;
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': '55e6e4d453msh2c3a9c82acd732cp141c8fjsn580ec8d16f01',
-    'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
-  }
-};
+// const url = process.env.RAPID_KEY;
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': '55e6e4d453msh2c3a9c82acd732cp141c8fjsn580ec8d16f01',
+//     'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
+//   }
+// };
 
-const res = await fetch(url, options);
-const data = await res.json()
-const main_data = data.edges;
+// const res = await fetch(url, options);
+// const data = await res.json()
+// const main_data = data.edges;
 
   return (
     <>
