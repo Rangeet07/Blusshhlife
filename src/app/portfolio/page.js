@@ -17,6 +17,9 @@
 import React from 'react'
 import styles from "@/app/styles/common.module.css"
 import InstaCard from "@/app/components/InstaCard";
+import { Josefin_Sans } from 'next/font/google'
+
+const inter = Josefin_Sans({ subsets: ['latin'] })
 
 export const getPosts = async () => {
         const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_KEY}`;
@@ -78,10 +81,14 @@ console.log(main_data);
 // const main_data = data.edges;
 
   return (
-    <>
+    
             <section className={styles.movieSection}>
                 <div className={styles.container}>
-                    <h1>Portfolio</h1>
+                    <h2 className={`${styles['ptitle']} ${inter['className']}`}>
+                      <span className={styles.ptitlecolor}>
+                      PORTFOLIO
+                        </span></h2>
+                      <h5> Make-up and hair to suit every occasion </h5>
                     <div className={styles.card_section}>
                         {/* <InstaCard/> */}
                         
@@ -93,7 +100,7 @@ console.log(main_data);
                     </div>
                 </div>
             </section>    
-    </>
+    
   )
 }
 
