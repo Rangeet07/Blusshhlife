@@ -60,9 +60,14 @@ const currentRoute = usePathname();
 {/* <nav className={`navbar ${navActive ? "active" : ""}`}> */}
     
       <div className={styles.navbar_brand}> 
-        <Image src="/blifelogo.svg" alt="Logoipsum" width={150} height={70}/>   
+        <Image src="/blifelogo.svg" alt="Logoipsum" width={120} height={40}/>   
       </div>
+            {/* <div>
+        <img src="./logo.svg" alt="Logoipsum" />
+      </div> */}
+
       <a
+      
         className={`nav__hamburger ${styles[navActive ? "active" : ""]}`}
         onClick={toggleNav}>
         <span className="nav__hamburger__line"></span>

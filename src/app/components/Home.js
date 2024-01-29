@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import { Josefin_Sans } from 'next/font/google'
-
+import bio from '../../../public/haylo_melissadsc09695.JPG'
 import styles from "@/app/styles/herosection.module.css"
 const inter = Josefin_Sans({ subsets: ['latin'] })
+import Image from 'next/image'
 
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
     <div>
         <section className={styles.herosection}>
         <div className={styles.herosectionimg}>
-                <img src="./haylo_melissadsc09695.jpg" alt="" />
+            <Image src={bio} alt="picture" width={350} height={500}/>
+                {/* <img src={bio} alt="picture" /> */}
             </div>
             <div className={styles.herosectioncontentbox}>
                 <div className={styles.herosectioncontent}>
@@ -32,9 +34,9 @@ Based predominantly in Perth but have traveled beyond the metro region for pre-w
                     </p>
                 </div>
                 {/* <button className={`${styles["btn"]} ${styles["btn-primary"]}`}>Book</button> */}
-                <button className='btn btn-primary'>
-                    <Link className={styles.book}href='#contact'>Book</Link>
-                </button>
+               
+                    <Link className="btn btn-primary"
+                    href='#contact'>Book</Link>
             </div>
            
         </section>

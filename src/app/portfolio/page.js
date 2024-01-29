@@ -56,7 +56,7 @@ const Movie = async () => {
 
 
 
-const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_KEY}`;
+const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=${process.env.INSTAGRAM_KEY}&limit=20`;
 // const a = 'https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,username&access_token=IGQWROQlg3OG9TU04wMEhicGFleko4R0hEN0JxTDFuamFsamVoZAUc5YnJOd3k4NGFjcDJjZA24tQjRKWlBtdGR6RURGTWxuRWdLbkJnd01qYi1kbWtsdHJDVXN0XzRpbThNSm5DN2NYNlFKU1kxMTRWWmZA0aXJadVEZD'
 const response = await fetch(url,{
     cache: "force-cache"
@@ -65,7 +65,9 @@ const response = await fetch(url,{
 const main_data = feed.data;
 console.log(main_data);
 
-
+if (main_data.media_type === 'IMAGE'){
+  return main_data
+}
 
 // const url = process.env.RAPID_KEY;
 // const options = {
@@ -93,6 +95,7 @@ console.log(main_data);
                         {/* <InstaCard/> */}
                         
                         {
+                          
                             main_data.map((curElem) => {
                                 return <InstaCard key={curElem.id} {...curElem} />
                             })

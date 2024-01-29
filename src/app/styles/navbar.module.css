@@ -14,6 +14,9 @@
   }
   .navbar_brand {
     text-align: left;
+    /* justify-content: left;
+    justify-items: left; */
+    /* margin-left: 60px; */
 }
   .navbaritems > ul {
     list-style: none;
@@ -66,6 +69,9 @@
     display: flex;
     z-index: 200;
   }
+  .navbar_brand {
+   margin: auto;
+}
   .navbaritems {
     display: flex;
   }

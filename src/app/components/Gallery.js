@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "@/app/styles/gallery.module.css"
+import gal from '../../../public/gallerypic.JPEG'
 import Image from 'next/image'
 
 
@@ -10,7 +11,7 @@ const Gallery = () => {
       <div className={styles.container}>
         <div className={styles.selected}>
           <Image
-            src='/cheyanne glew-angelanie photography-9.jpeg'
+            src={gal}
             alt='/'
             layout='responsive'
             width='677'

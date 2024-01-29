@@ -73,18 +73,7 @@ const Footer = () => {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                href="testimonial"
-                className="text-md"
-              >
-                Testimonials
-              </Link>
-            </li>
+     
           </ul>
         </div>
         <div className={style.footersocialicon}>
@@ -183,49 +172,7 @@ const Footer = () => {
       <hr className={style.divider}/>
       <div className={style.footercontentcontainer}>
         <p className={style.footercontent}>Copyright Blusshlife</p>
-        <div className={style.footersocialicon}>
-          <ul>
-            <li>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                href="/Privacy_Policy"
-                className={currentRoute === "/Privacy_Policy" 
-                  ? styles.navbaractivecontent
-                     : "text-sm " }                            >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                href="/Terms_of_Service"
-                className={currentRoute === "/Terms_of_Service" 
-                ? styles.navbaractivecontent
-                   : "text-sm " }                                          >
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                href="/Cookies_Settings"
-                className={currentRoute === "/Cookies_Settings" 
-                ? styles.navbaractivecontent
-                   : "text-sm " }                                                        >
-                Cookies Settings
-              </Link>
-            </li>
-          </ul>
-        </div>
+  
       </div>
     </footer>
   )

@@ -5,12 +5,14 @@ import Link from "next/link";
 
 const InstaCard = (curElem) => {
 
-    const { id} = curElem;
+    const { id, media_type} = curElem;
+   
+    
   return (
     <>
     <div className={styles.card} >
                 <div className={styles.card_image}>
-                <Image src={curElem.media_url} alt={id} width={240} height={240} />
+               {curElem.media_type==='IMAGE' && <Image src={curElem.media_url} alt={id} width={240} height={240} />}
                 </div>
                 {/* <div className={styles.card_data}>
                     <h2>{title.substring(0,18)}</h2>
