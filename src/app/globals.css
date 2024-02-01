@@ -77,7 +77,7 @@ p {
 }
 .btn-github:hover {
   color: var(--github);
-  background-color: var(--white);
+  background-color: palegreen;
 }
 /* Global CSS Ends */
 /* Main Headings */

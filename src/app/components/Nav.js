@@ -60,7 +60,8 @@ const currentRoute = usePathname();
 {/* <nav className={`navbar ${navActive ? "active" : ""}`}> */}
     
       <div className={styles.navbar_brand}> 
-        <Image src="/blifelogo.svg" alt="Logoipsum" width={120} height={40}/>   
+        {/* <Image src="/blifelogo.svg" alt="Logoipsum" width={120} height={40}/>    */}
+        <h2>BlusshLife</h2>
       </div>
             {/* <div>
         <img src="./logo.svg" alt="Logoipsum" />
@@ -68,11 +69,11 @@ const currentRoute = usePathname();
 
       <a
       
-        className={`nav__hamburger ${styles[navActive ? "active" : ""]}`}
+        className={`${styles['nav__hamburger']} ${styles[navActive ? "active" : ""]}`}
         onClick={toggleNav}>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
-        <span className="nav__hamburger__line"></span>
+        <span className={styles.nav__hamburger__line}></span>
+        <span className={styles.nav__hamburger__line}></span>
+        <span className={styles.nav__hamburger__line}></span>
       </a>
       {/* <div className={`navbaritems ${navActive ? "active" : ""}`}> */}
       <div className={`${styles["navbaritems"]} ${styles[navActive ? "active" : ""]}`}>
@@ -127,8 +128,8 @@ const currentRoute = usePathname();
               smooth={true}
               offset={-70}
               duration={500}
-              href="/contact"
-              className={currentRoute === "/contact" 
+              href="#contact"
+              className={currentRoute === "#contact" 
               ? styles.navbaractivecontent
               :styles.navbarcontent}>
               Contact

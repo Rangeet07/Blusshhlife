@@ -12,7 +12,7 @@ const Home = () => {
     <div>
         <section className={styles.herosection}>
         <div className={styles.herosectionimg}>
-            <Image src={bio} alt="picture" width={350} height={500}/>
+            <Image src={bio} alt="picture" width={0} height={500}/>
                 {/* <img src={bio} alt="picture" /> */}
             </div>
             <div className={styles.herosectioncontentbox}>

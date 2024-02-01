@@ -9,6 +9,9 @@
     background-color: var(--bg-shade);
 
 }
+.vid{
+    display: none;
+}
 
 .container{
     max-width: 140rem;

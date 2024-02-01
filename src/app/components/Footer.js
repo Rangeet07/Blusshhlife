@@ -16,7 +16,7 @@ const Footer = () => {
 <footer className={style.footercontainer}>
       <div className={style.footerlinkcontainer}>
         <div>
-          <Image src="/blifelogo.svg" alt="Logoipsum"  width={150} height={40} />
+        <h2>BlusshLife</h2>
         </div>
         <div className={style.footeritems}>
           <ul>
@@ -66,8 +66,8 @@ const Footer = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                href="/contact"
-                className={currentRoute === "/contact" 
+                href="#contact"
+                className={currentRoute === "#contact" 
                   ? styles.navbaractivecontent
                      : "text-md " }              >
                 Contact
@@ -122,7 +122,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.twitter.com/"
                 className={styles.navbarcontent}
@@ -165,7 +165,7 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
