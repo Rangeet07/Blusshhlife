@@ -115,7 +115,10 @@ console.log(main_data);
                     </div>
                 </div>
                 <Link className='btn btn-github'                 href="https://www.instagram.com/blusshhlife"
+                                 
+
 >
+View more on Instagram
 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
