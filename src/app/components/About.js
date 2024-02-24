@@ -5,13 +5,13 @@ import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 import styles from "@/app/styles/aboutsection.module.css"
-import bio from '../../../public/rupshaab.JPG'
+import rups from '../../../public/rupshaab.JPG'
 
 const About = () => {
   return (
 <section id="about" className="about--section">
 <div className="about--section--img">
-<Image src={bio} alt="picture" width={0} height={500}/>
+<Image src={rups} alt="picture" width={0} height={500}/>
 </div>
 <div className="hero--section--content--box about--section--box">
   <div className="hero--section--content">
