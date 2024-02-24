@@ -100,6 +100,20 @@ const currentRoute = usePathname();
               smooth={true}
               offset={-70}
               duration={500}
+              href="#services"
+              className={currentRoute === "#services" 
+       ? styles.navbaractivecontent
+          :styles.navbarcontent}>
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               href="/portfolio"
               className={currentRoute === "/portfolio" 
               ? styles.navbaractivecontent
@@ -114,8 +128,8 @@ const currentRoute = usePathname();
               smooth={true}
               offset={-70}
               duration={500}
-              href="/about"
-              className={currentRoute === "/about" 
+              href="#about"
+              className={currentRoute === "#about" 
               ? styles.navbaractivecontent
               :styles.navbarcontent}>
               About Me
