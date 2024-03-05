@@ -40,6 +40,19 @@ const Footer = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                href="/#services"
+                className={currentRoute === "/#services" 
+                  ? styles.navbaractivecontent
+                     : "text-md " }              >
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 href="/portfolio"
                 className={currentRoute === "/portfolio" 
                   ? styles.navbaractivecontent
@@ -47,27 +60,15 @@ const Footer = () => {
                 Portfolio
               </Link>
             </li>
+          
             <li>
               <Link
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                href="/about"
-                className={currentRoute === "/about" 
-                  ? styles.navbaractivecontent
-                     : "text-md " }              >
-                About Me
-              </Link>
-            </li>
-            <li>
-              <Link
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                href="#contact"
-                className={currentRoute === "#contact" 
+                href="/#contact"
+                className={currentRoute === "/#contact" 
                   ? styles.navbaractivecontent
                      : "text-md " }              >
                 Contact

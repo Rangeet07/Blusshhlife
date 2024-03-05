@@ -3,12 +3,20 @@ import React, { useState } from 'react'
 import styles from "@/app/styles/contact.module.css"
 import data from "../../../data/index.json";
 
-import { MdEmail, MdVoiceChat, MdForum, MdCall, MdLocationCity, MdLocationOn } from "react-icons/md";
+import { MdEmail, MdVoiceChat, MdForum, MdCall, MdLocationCity, MdLocationOn,  } from "react-icons/md";
 
 // import { useForm } from 'react-hook-form'
 import ContactCard from './ContactCard'
 import Link from 'next/link';
+import { Tangerine } from 'next/font/google';
 
+const tangerine = Tangerine({
+    
+  subsets: ['latin'],
+
+weight: ["400",  "700"],
+},
+);
 
 const ContactForm = () => {
  
@@ -55,10 +63,12 @@ const ContactForm = () => {
     <section id="contact" className={styles.contactsection}>
     <div>
       <p className="sub-title">Get In Touch</p>
-      <h2>Contact Me</h2>
+      <h2 className={tangerine.className}>Contact Me</h2>
+    
       {/* <p className="text-lg">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
       </p> */}
+
 
     </div>
     <div className={styles.contact_info}>
@@ -68,20 +78,15 @@ const ContactForm = () => {
       <p className="text-md"> rupsha.nandy007@gmail.com</p>
       </div>
 
-      <div className={styles.card}>
+      {/* <div className={styles.card}>
       <i><MdCall/></i>
       <p className="text-md">0405820704</p>
 
-      </div>
-
+      </div> */}
       <div className={styles.card}>
       <i><MdLocationOn/></i>
       <p className="text-md">Perth, Western Austrailia</p>
       </div>
-
-
-
-      
 
     </div>
 

@@ -100,11 +100,11 @@ const currentRoute = usePathname();
               smooth={true}
               offset={-70}
               duration={500}
-              href="#services"
-              className={currentRoute === "#services" 
+              href="/#services"
+              className={currentRoute === "/#services" 
        ? styles.navbaractivecontent
           :styles.navbarcontent}>
-              Services
+              Pricing
             </Link>
           </li>
           <li>
@@ -121,20 +121,20 @@ const currentRoute = usePathname();
               Portfolio
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               onClick={closeMenu}
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-              href="#about"
-              className={currentRoute === "#about" 
+              href="/#about"
+              className={currentRoute === "/#about" 
               ? styles.navbaractivecontent
               :styles.navbarcontent}>
               About Me
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               onClick={closeMenu}
@@ -142,8 +142,8 @@ const currentRoute = usePathname();
               smooth={true}
               offset={-70}
               duration={500}
-              href="#contact"
-              className={currentRoute === "#contact" 
+              href="/#contact"
+              className={currentRoute === "/#contact" 
               ? styles.navbaractivecontent
               :styles.navbarcontent}>
               Contact

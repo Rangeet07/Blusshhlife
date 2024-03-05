@@ -38,7 +38,7 @@ const InstaCard = (curElem) => {
     <>
     <div className={styles.card} >
                 <div className={styles.card_image}>
-               {curElem.media_type==='IMAGE' && <Image src={curElem.media_url} alt={id} width={240} height={240} />}
+               {curElem.media_type==='IMAGE' && <Image src={curElem.media_url} alt={id} width={240} height={240} loading='lazy'  blurDataURL={curElem.media_url} placeholder='blur' />}
                {post}
                 </div>
                 {/* <div className={styles.card_data}>

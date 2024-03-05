@@ -16,6 +16,7 @@ const Gallery = () => {
             layout='responsive'
             width='677'
             height='451'
+            loading="lazy"            
           />
         </div>
         <div className={styles.thumbnail}>
@@ -26,6 +27,7 @@ const Gallery = () => {
             height='217'
             layout='responsive'
             objectFit='fill'
+            loading="lazy"
           />
         </div>
         <div className={styles.thumbnail}>
@@ -36,6 +38,7 @@ const Gallery = () => {
             height='217'
             layout='responsive'
             objectFit='cover'
+
           />
         </div>
         <div className={styles.thumbnail}>
@@ -46,6 +49,7 @@ const Gallery = () => {
             height='217'
             layout='responsive'
             objectFit='cover'
+            loading="lazy"
           />
         </div>
         <div className={styles.thumbnail}>
@@ -56,6 +60,7 @@ const Gallery = () => {
             height='217'
             layout='responsive'
             objectFit='cover'
+            loading="lazy"
           />
         </div>
       </div>
