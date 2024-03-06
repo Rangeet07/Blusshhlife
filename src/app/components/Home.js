@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { Josefin_Sans , Sacramento, Tangerine} from 'next/font/google'
 import bio from '../../../public/haylo_melissadsc09695.JPG'
@@ -6,6 +7,10 @@ import styles from "@/app/styles/herosection.module.css"
 const inter = Josefin_Sans({ subsets: ['latin'] })
 // const sacramento = Tangerine({subsets:['latin']})
 import Image from 'next/image'
+import ReadMore from './ReadMore'
+
+
+
 const sacramento = Sacramento({
     subsets:['latin'],
 
@@ -20,6 +25,8 @@ const tangerine = Tangerine({
   },
  );
 const Home = ({title, about}) => {
+    const [readMore , setReadMore] = useState(false);
+
   return (
     <div>
         <section className={styles.herosection}>
@@ -39,16 +46,16 @@ const Home = ({title, about}) => {
                        
                     Rupsha is an Indian Australian with a palette of experience spanning five years in the realm of professional makeup. Rupsha has mastered the art of enhancing natural beauty and create stunning transformations.
 
-                        <br/>
-                        Her expertise lies in the seamless fusion of aesthetics and modern styles, crafting looks that are both timeless and on-trend. Whether it is the intricacies of bridal makeup, the glamour of special occasions, or the bold creativity of editorial shoots, Rupsha’s approach is characterised by precision, passion and a commitment to making every client feel radiant✨
+                     
+                        {readMore && <ReadMore/>}
                         <br />
-                      
+
                     </p>
                 </div>
                 {/* <button className={`${styles["btn"]} ${styles["btn-primary"]}`}>Book</button> */}
                
-                    <Link className="btn btn-primary"
-                    href='#services'>Read more</Link>
+                    <Link className="btn btn-primary" href='#'
+                     onClick = {() => setReadMore(!readMore)} >Read {(readMore && `less` )|| (!readMore && `more`) }</Link>
             </div>
             <div className={styles.herosectionimg}>
             <Image src={bio} alt="picture" width={0} height={500} loading="lazy" />

@@ -61,7 +61,7 @@ const currentRoute = usePathname();
     
       <div className={styles.navbar_brand}> 
         {/* <Image src="/blifelogo.svg" alt="Logoipsum" width={120} height={40}/>    */}
-        <h2>BlusshLife</h2>
+        <h2>BlusshhLife</h2>
       </div>
             {/* <div>
         <img src="./logo.svg" alt="Logoipsum" />
