@@ -55,7 +55,7 @@ const Home = ({title, about}) => {
                 {/* <button className={`${styles["btn"]} ${styles["btn-primary"]}`}>Book</button> */}
                
                     <Link className="btn btn-primary" href='#'
-                     onClick = {() => setReadMore(!readMore)} >Read {(readMore && `less` )|| (!readMore && `more`) }</Link>
+                     onClick = {() => setReadMore(!readMore)} >read {(readMore && `less` )|| (!readMore && `more`) }</Link>
             </div>
             <div className={styles.herosectionimg}>
             <Image src={bio} alt="picture" width={0} height={500} loading="lazy" />
