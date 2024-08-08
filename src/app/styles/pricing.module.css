@@ -1,6 +1,9 @@
 .text{
     text-align: center;
 }
+.pricehead{
+    font-size: 40px;
+}
 
 .lash{
     margin-bottom: 12px ;

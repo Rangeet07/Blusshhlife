@@ -31,16 +31,16 @@ const Home = ({title, about}) => {
     <div>
         <section className={styles.herosection}>
        
-            <div className={styles.herosectioncontentbox}>
+            <div className={`${styles['herosectioncontentbox']} ${sacramento['className']}`}>
                 <div className={styles.herosectioncontent}>
                     {/* <p className={styles.sectiontitle}>Hey Im Rangeet</p> */}
                     {/* <h2 className={styles.herosectiontitle}> */}
-                    <h2 className={`${styles['herosectiontitle']} ${sacramento['className']}`}>
+                    <h2 className={styles.herosectiontitle}>
                     <span className={styles.herosectiontitlecolor}>La Blush Life</span>{" "}
                     </h2>
-                    <h3 >Makeup Artist</h3>
+                    <h3 className={styles.info} >Makeup Artist</h3>
 
-                    <p className={ `${styles['herosectiondescription']} ${sacramento['className']}`}>
+                    <p className={styles.herosectiondescription}>
                     Welcome to La Blush Life Makeup by Rupsha! 💕
                     <br />
                        

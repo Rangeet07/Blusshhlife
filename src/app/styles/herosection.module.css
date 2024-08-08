@@ -3,13 +3,17 @@
 
 .sectiontitle {
     color: var(--heading-color);
-    font-size: 21px;
+    font-size: 48px;
     text-align: center;
     font-style: normal;
-    font-weight: 600;
+    font-weight:700 ;
     line-height: 32px;
     display: flex;
     align-items: flex-start;
+  }
+
+  .info{
+    font-size: 30px;
   }
   /* Portfolio, Testimonial & Contact Me */
   .sub-title {
@@ -107,7 +111,7 @@
 
    .herosectiontitle,
   .sections--heading {
-    font-size: 35px;
+    font-size: 42px;
     line-height: 40px;
   }
  .herosectioncontentbox {

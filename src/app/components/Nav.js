@@ -13,9 +13,17 @@ import { useRouter } from 'next/router'
 import { usePathname } from 'next/navigation';
 
 
-
 import React from 'react'
+import { Inter, Sacramento } from "next/font/google";
 // import { Link } from "react-scroll";
+
+const inter = Inter({ subsets: ['latin'] })
+
+const sacramento = Sacramento({
+  subsets:['latin'],
+
+  weight: ['400']
+})
 
 const Nav = () => {
 //     const router = useRouter();
@@ -61,7 +69,7 @@ const currentRoute = usePathname();
     
       <div className={styles.navbar_brand}> 
         {/* <Image src="/blifelogo.svg" alt="Logoipsum" width={120} height={40}/>    */}
-        <h2>BlusshhLife</h2>
+        <h2 cl>BlusshhLife</h2>
       </div>
             {/* <div>
         <img src="./logo.svg" alt="Logoipsum" />

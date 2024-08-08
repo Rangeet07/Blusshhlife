@@ -5,7 +5,7 @@ import styles from "@/app/styles/pricing.module.css"
 const Pricing = () => {
   return (
     <div id='services' className={styles.text}>  
-        <h2>Pricing</h2>
+        <h2 className={styles.pricehead}>Pricing</h2>
         <div class="pricing-table">
         <div class="pricing-card">
             <h3 class="pricing-card-header">Soft Glam Makeup</h3>

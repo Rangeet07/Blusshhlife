@@ -1,9 +1,14 @@
-import { Inter } from 'next/font/google'
+import { Inter , Sacramento} from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
+const sacramento = Sacramento({
+  subsets:['latin'],
+
+  weight: ['400']
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -22,7 +27,7 @@ export default function RootLayout({ children }) {
   sizes="<generated>"
 />
       </head>
-      <body className={inter.className}>
+      <body className={sacramento.className}>
         <Header/>
         {children}
         <Footer/>
