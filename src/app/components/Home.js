@@ -35,7 +35,7 @@ const Home = ({title, about}) => {
                 <div className={styles.herosectioncontent}>
                     {/* <p className={styles.sectiontitle}>Hey Im Rangeet</p> */}
                     {/* <h2 className={styles.herosectiontitle}> */}
-                    <h2 className={`${styles['herosectiontitle']} ${inter['className']}`}>
+                    <h2 className={`${styles['herosectiontitle']} ${sacramento['className']}`}>
                     <span className={styles.herosectiontitlecolor}>La Blush Life</span>{" "}
                     </h2>
                     <h3 >Makeup Artist</h3>
