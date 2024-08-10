@@ -63,7 +63,7 @@ const ContactForm = () => {
     <section id="contact" className={styles.contactsection}>
     <div>
       <p className="sub-title">Get In Touch</p>
-      <h2 className={tangerine.className}>Contact Me</h2>
+      {/* <h2 className={tangerine.className}>Contact Me</h2> */}
     
       {/* <p className="text-lg">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.

@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Josefin_Sans , Sacramento, Tangerine} from 'next/font/google'
-import bio from '../../../public/haylo_melissadsc09695.JPG'
+import bio from '../../../public/rupshaab.JPG'
 import styles from "@/app/styles/herosection.module.css"
 const inter = Josefin_Sans({ subsets: ['latin'] })
 // const sacramento = Tangerine({subsets:['latin']})

@@ -121,7 +121,7 @@ h2 {
 /* Body 3 */
 .text-sm {
   color: var(--black);
-  font-size: 16px;
+  font-size: px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;

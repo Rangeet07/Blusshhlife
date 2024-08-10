@@ -51,10 +51,10 @@
   .herosectiontitle {
     color: var(--heading-color);
     
-    font-size: 74.667px;
+    font-size: 71.667px;
     font-weight: 700;
     line-height: 90px;
-    align-self: stretch;
+
   }
   .herosectiontitlecolor {
     color: var(--primary);
@@ -79,7 +79,7 @@
   /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
    .herosectiontitle {
-    font-size: 68px;
+    font-size: 64px;
     line-height: 70px;
   }
 }
@@ -100,6 +100,10 @@
    .herosectiontitle,
     .herosectiondescription {
     text-align: center;
+  }
+
+  .herosectiontitlecolor {
+    font-size: 36px;
   }
 
  
