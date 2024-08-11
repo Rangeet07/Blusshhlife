@@ -62,7 +62,7 @@ const ContactForm = () => {
 
     <section id="contact" className={styles.contactsection}>
     <div>
-      <p className="sub-title">Get In Touch</p>
+      <p className="sub-title ">Get In Touch</p>
       {/* <h2 className={tangerine.className}>Contact Me</h2> */}
     
       {/* <p className="text-lg">
@@ -117,7 +117,7 @@ const ContactForm = () => {
     </div> */}
     <div>
     <h2>OR</h2>
-<p className='sub-title'>Get in touch via Instagram</p>
+<p className=' insta-title'>Get in touch via Instagram</p>
 <hr className={styles.line} />
     </div>
 

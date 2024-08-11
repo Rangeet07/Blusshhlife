@@ -98,11 +98,11 @@ console.log(main_data);
     
             <section className={styles.movieSection}>
                 <div className={styles.container}>
-                    <h2 className={`${styles['ptitle']} ${inter['className']}`}>
+                    <h2 className={`${styles['ptitle']} `}>
                       <span className={styles.ptitlecolor}>
-                      PORTFOLIO
+                      Portfolio
                         </span></h2>
-                      <h5> Make-up and hair to suit every occasion </h5>
+                      <h3 className={styles.psubtitle}> Make-up and hair to suit every occasion </h3>
                     <div className={styles.card_section}>
                         {/* <InstaCard/> */}
                         

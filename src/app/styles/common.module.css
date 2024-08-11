@@ -30,6 +30,10 @@
 
     line-height: 90px;
   }
+  .psubtitle{
+    font-size: 22px;
+    font-weight: 700;
+  }
   .ptitlecolor {
     color: var(--primary);
   }
