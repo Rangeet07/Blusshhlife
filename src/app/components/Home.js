@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Josefin_Sans , Sacramento, Tangerine} from 'next/font/google'
-import bio from '../../../public/rupshaabout.JPG'
+import bio from '../../../public/rupshaabout.jpg'
 import styles from "@/app/styles/herosection.module.css"
 const inter = Josefin_Sans({ subsets: ['latin'] })
 // const sacramento = Tangerine({subsets:['latin']})
@@ -58,7 +58,7 @@ const Home = ({title, about}) => {
                      onClick = {() => setReadMore(!readMore)} >read {(readMore && `less` )|| (!readMore && `more`) }</Link>
             </div>
             <div className={styles.herosectionimg}>
-            <Image src={bio} alt="picture" width={0} height={350}  loading="lazy"
+            <Image src={bio} alt="picture" width={0} height={350}  loading="lazy" 
             
              />
                 {/* <img src={bio} alt="picture" /> */}
