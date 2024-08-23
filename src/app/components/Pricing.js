@@ -44,7 +44,7 @@ const Pricing = () => {
         </div>
  
         <div class="pricing-card">
-            <h3 class="pricing-card-header">Editorial makeup</h3>
+            <h3 class="pricing-card-header">Editorial Makeup</h3>
             <div class="price"> $130
               </div>
               <div className={styles.lash}>
